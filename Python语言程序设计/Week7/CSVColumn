@@ -1,0 +1,8 @@
+# CSV格式列变换
+f = open("data.csv")
+for line in f:
+    line = line.strip("\n")
+    line = line.split(",")
+    line = line[::-1]
+    print(",".join(line))
+f.close()
