@@ -1,0 +1,29 @@
+# turtle风轮绘制
+import turtle
+import math
+turtle.setup(600, 600, 0, 0)
+turtle.pensize(3)
+r = 150/math.pi
+
+turtle.goto(0,-r)
+turtle.circle(r, -45)
+turtle.goto(0,0)
+turtle.right(45)
+
+turtle.goto(-r,0)
+turtle.circle(r, -45)
+turtle.goto(0,0)
+turtle.right(45)
+
+turtle.goto(0,r)
+turtle.circle(r, -45)
+turtle.goto(0,0)
+turtle.right(45)
+
+turtle.goto(r,0)
+turtle.circle(r, -45)
+turtle.goto(0,0)
+turtle.right(45)
+
+turtle.left(135)
+turtle.done
